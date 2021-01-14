@@ -10,7 +10,7 @@ struct SDL_PixelFormat;
 class Color {
 	uint32_t _color;
 
-	public:
+public:
 
 	static const SDL_PixelFormat* _format;
 	static void InitColorFormat(const SDL_PixelFormat* format);

@@ -8,7 +8,7 @@
 class Vec2D {
 	float _x, _y;
 
-	public:
+public:
 
 	static const Vec2D Zero;
 
