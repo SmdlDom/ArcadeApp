@@ -6,7 +6,6 @@
 #include <iostream>
 
 class Vec2D {
-	private:
 	float _x, _y;
 
 	public:
