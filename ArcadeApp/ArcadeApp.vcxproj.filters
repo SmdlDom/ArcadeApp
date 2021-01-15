@@ -25,6 +25,12 @@
     <Filter Include="Header Files\Graphics">
       <UniqueIdentifier>{1c629ad4-f8c7-444b-b54f-83d7c32d99fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Shapes">
+      <UniqueIdentifier>{287d7649-1768-4c23-87ef-7d77e3240277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shapes">
+      <UniqueIdentifier>{c77a184e-c593-4d8d-9741-1adaf420948d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArcadeApp.cpp">
@@ -45,6 +51,9 @@
     <ClCompile Include="Screen.cpp">
       <Filter>Source Files\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Line2D.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vec2D.h">
@@ -61,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="Screen.h">
       <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Line2D.h">
+      <Filter>Header Files\Shapes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
