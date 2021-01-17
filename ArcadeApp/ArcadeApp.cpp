@@ -9,6 +9,9 @@
 #include "Color.h"
 #include "Screen.h"
 #include "Line2D.h"
+#include "Triangle.h"
+#include "AARectangle.h"
+#include "Circle.h"
 
 using namespace std;
 
@@ -23,8 +26,15 @@ int main(int argc, const char * argv[]) {
 	screen.Init(SCREEN_WIDTH, SCREEN_HEIGHT, MAGNIFICATION);
 
 	Line2D line = { Vec2D(0,0), Vec2D(SCREEN_WIDTH, SCREEN_HEIGHT) };
+	Triangle triangle = { Vec2D(60,10), Vec2D(10,110), Vec2D(110,110) };
+	AARectangle rect = { Vec2D(SCREEN_WIDTH / 2 - 25, SCREEN_HEIGHT / 2 - 25), 50, 50 };
+	Circle circle = { Vec2D(112,144), 50};
+
+	screen.Draw(circle, Color::Pink(), true, Color::Pink());
+	screen.Draw(rect, Color::Blue(), true, Color::Blue());
+	screen.Draw(triangle, Color::Red(), true, Color::Red());
 	screen.Draw(line, Color::White());
-	//screen.Draw(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, Color::Yellow());
+	screen.Draw(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, Color::Yellow());
 	screen.SwapScreens();
 
 	//Event loop

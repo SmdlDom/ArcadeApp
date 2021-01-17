@@ -66,7 +66,7 @@ Vec2D& Vec2D::operator+=(const Vec2D& vec) {
 }
 
 Vec2D& Vec2D::operator-=(const Vec2D& vec) {
-	*this = *this + vec;
+	*this = *this - vec;
 	return *this;
 }
 
@@ -123,12 +123,14 @@ Vec2D Vec2D::RotationResult(float angle, const Vec2D& aroundPoint) const {
 	float cos = cosf(angle);
 	float sin = sinf(angle);
 
-	Vec2D thisVec(_x, _y);
-	thisVec -= aroundPoint;
 
+	Vec2D thisVec(_x, _y);
+
+	thisVec -= aroundPoint;
+	
 	float xRot = thisVec._x * cos - thisVec._y * sin;
 	float yRot = thisVec._x * sin + thisVec._y * cos;
-
+	
 	Vec2D rot = Vec2D(xRot, yRot);
 
 	return rot + aroundPoint;
