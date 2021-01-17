@@ -28,10 +28,10 @@ int main(int argc, const char * argv[]) {
 	Line2D line = { Vec2D(0,0), Vec2D(SCREEN_WIDTH, SCREEN_HEIGHT) };
 	Triangle triangle = { Vec2D(60,10), Vec2D(10,110), Vec2D(110,110) };
 	AARectangle rect = { Vec2D(SCREEN_WIDTH / 2 - 25, SCREEN_HEIGHT / 2 - 25), 50, 50 };
-	Circle circle = { Vec2D(112,144), 50};
+	Circle circle = { Vec2D(SCREEN_WIDTH / 2 + 50, SCREEN_HEIGHT / 2 + 50), 50};
 
-	screen.Draw(circle, Color::Pink(), true, Color::Pink());
-	screen.Draw(rect, Color::Blue(), true, Color::Blue());
+	screen.Draw(circle, Color(255, 0, 0, 150), true, Color(255, 0, 0, 150));
+	screen.Draw(rect, Color(0,255,0,150), true, Color(0,255,0,150));
 	screen.Draw(triangle, Color::Red(), true, Color::Red());
 	screen.Draw(line, Color::White());
 	screen.Draw(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, Color::Yellow());

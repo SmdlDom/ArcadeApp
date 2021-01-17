@@ -90,71 +90,7 @@ void Screen::FillPoly(const std::vector<Vec2D>& points, const Color& color) {
 		}
 	}
 }
-/*
-void Screen::FillPoly(const std::vector<Vec2D>& points, const Color& color) {
-	if (points.size() > 0) {
-		float top = points[0].GetY();
-		float bottom = points[0].GetY();
-		float right = points[0].GetX();
-		float left = points[0].GetX();
 
-		for (size_t i = 1; i < points.size(); ++i) {
-			if (points[i].GetY() < top) {
-				top = points[i].GetY();
-			}
-			if (points[i].GetY() > bottom) {
-				top = points[i].GetY();
-			}
-			if (points[i].GetX() < left) {
-				top = points[i].GetX();
-			}
-			if (points[i].GetX() > right) {
-				top = points[i].GetX();
-			}
-
-			for (int pixelY = top; pixelY < bottom; ++pixelY) {
-				std::vector<float> nodeXVec;
-				size_t j = points.size() - 1;
-				for (size_t i = 0; i < points.size(); ++i) {
-					float pointiY = points[i].GetY();
-					float pointjY = points[j].GetY();
-
-					if ((pointiY <= (float) pixelY && pointjY > (float)pixelY) || (pointjY <= (float) pixelY && pointiY > (float)pixelY)) {
-						float denom = pointjY - pointiY;
-						if (IsEqual(denom, 0)) {
-							continue;
-						}
-
-						float x = points[i].GetX() + (pixelY - pointiY) / (denom) * (points[j].GetX() - points[i].GetX());
-						nodeXVec.push_back(x);
-					}
-
-					j = i;
-				}
-				std::sort(nodeXVec.begin(), nodeXVec.end(), std::less<>());
-
-				for (size_t k = 0; k < nodeXVec.size(); k += 2) {
-					if (nodeXVec[k] > right) {
-						break;
-					}
-					if (nodeXVec[k + 1] > left) {
-						if (nodeXVec[k] < left) {
-							nodeXVec[k] = left;
-						}
-						if (nodeXVec[k + 1] > right) {
-							nodeXVec[k + 1] = right;
-						}
-
-						for (int pixelX = nodeXVec[k]; pixelX < nodeXVec[k + 1]; ++pixelX) {
-							Draw(pixelX, pixelY, color);
-						}
-					}
-				}
-			}
-		}
-	}
-}
-*/
 Screen::Screen() : _width(0), _height(0), _optrWindow(nullptr), _noptrWindowSurface(nullptr) {}
 
 Screen::~Screen() {
@@ -181,7 +117,7 @@ SDL_Window* Screen::Init(uint32_t w, uint32_t h, uint32_t mag) {
 	if (_optrWindow) {
 		_noptrWindowSurface = SDL_GetWindowSurface(_optrWindow);
 
-		SDL_PixelFormat* pixelFormat = _noptrWindowSurface->format;
+		SDL_PixelFormat* pixelFormat = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA8888);
 		Color::InitColorFormat(pixelFormat);
 		_clearColor = Color::Black();
 
