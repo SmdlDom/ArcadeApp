@@ -29,6 +29,16 @@ Vec2D Triangle::GetCenterPoint() const {
 	return Vec2D(x, y);
 }
 
+void Triangle::MoveTo(const Vec2D& position) {
+	Vec2D& originalP0 = _points[0];
+
+	_points[0] = position;
+	_points[1] = Vec2D(position.GetX() + _points[1].GetX() - originalP0.GetX(),
+					   position.GetY() + _points[1].GetY() - originalP0.GetY());
+	_points[2] = Vec2D(position.GetX() + _points[2].GetX() - originalP0.GetX(),
+					   position.GetY() + _points[2].GetY() - originalP0.GetY());
+}
+
 float Triangle::Area() const {
 	return Area(GetP0(), GetP1(), GetP2());
 }
