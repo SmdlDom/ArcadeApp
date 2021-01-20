@@ -147,7 +147,9 @@
     <ClCompile Include="ArcadeApp.cpp" />
     <ClCompile Include="ArcadeScene.cpp" />
     <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Block.cpp" />
     <ClCompile Include="BreakOut.cpp" />
+    <ClCompile Include="BreakoutGameLevel.cpp" />
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Excluder.cpp" />
@@ -172,6 +174,7 @@
     <ClInclude Include="Ball.h" />
     <ClInclude Include="BoundaryEdge.h" />
     <ClInclude Include="BreakOut.h" />
+    <ClInclude Include="BreakoutGameLevel.h" />
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Excluder.h" />
@@ -179,6 +182,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameController.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="Block.h" />
     <ClInclude Include="InputAction.h" />
     <ClInclude Include="InputController.h" />
     <ClInclude Include="LevelBoundary.h" />

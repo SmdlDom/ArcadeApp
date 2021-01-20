@@ -129,6 +129,12 @@
     <ClCompile Include="LevelBoundary.cpp">
       <Filter>Source Files\Games\Breakout</Filter>
     </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Source Files\Games\Breakout</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakoutGameLevel.cpp">
+      <Filter>Source Files\Games\Breakout</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vec2D.h">
@@ -204,6 +210,12 @@
       <Filter>Header Files\Games\BreakOut</Filter>
     </ClInclude>
     <ClInclude Include="LevelBoundary.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakoutGameLevel.h">
       <Filter>Header Files\Games\BreakOut</Filter>
     </ClInclude>
   </ItemGroup>

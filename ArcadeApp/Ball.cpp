@@ -4,7 +4,7 @@
 #include "Circle.h"
 #include "BoundaryEdge.h"
 
-const float Ball::RADIUS = 5.0f;
+const float Ball::RADIUS = 4.0f;
 
 Ball::Ball(): Ball(Vec2D::Zero, RADIUS) {}
 

@@ -46,6 +46,7 @@ void BreakOut::ResetGame() {
 
     _ball.SetVelocity(INITIAL_BALL_VEL);
 
+    _level.Init(levelBoundary);
 }
 
 void BreakOut::Init(GameController& controller) {
@@ -84,11 +85,15 @@ void BreakOut::Update(uint32_t dt) {
         _ball.Bounce(edge);
         return;
     }
+
+    _level.Update(dt, _ball);
 }
 
 void BreakOut::Draw(Screen& screen) {
     _ball.Draw(screen);
     _paddle.Draw(screen);
+    _level.Draw(screen);
+
     screen.Draw(_levelBoundary.GetAARectangle(), Color::White());
 }
 

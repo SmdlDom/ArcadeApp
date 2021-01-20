@@ -7,6 +7,7 @@
 #include "Paddle.h"
 #include "Ball.h"
 #include "LevelBoundary.h"
+#include "BreakoutGameLevel.h"
 
 class BreakOut : public Game {
 private:
@@ -14,6 +15,7 @@ private:
 	Paddle _paddle;
 	Ball _ball;
 	LevelBoundary _levelBoundary;
+	BreakoutGameLevel _level;
 
 	void ResetGame();
 
