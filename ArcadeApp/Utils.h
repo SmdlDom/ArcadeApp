@@ -15,6 +15,8 @@ bool IsGE(float x, float y);
 
 bool IsLE(float x, float y);
 
+float MillisecondsToSeconds(unsigned int milliseconds);
+
 #endif /*UTILS_UTILS_H_*/
 
 class Utils {};

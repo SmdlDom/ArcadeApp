@@ -49,16 +49,64 @@
     <Filter Include="Source Files\Input">
       <UniqueIdentifier>{2784b09c-0431-42e3-b48d-a1b786aa4e05}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Games">
+      <UniqueIdentifier>{23b3c3bd-0f35-45b7-8188-8958063149cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Games">
+      <UniqueIdentifier>{26c46b20-5f95-4827-b4c5-1ee5051fe1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\BreakOut">
+      <UniqueIdentifier>{30ae9b49-af11-492b-b73e-fb00924f8180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Games\Breakout">
+      <UniqueIdentifier>{f1758d79-210d-43cc-b097-083e51feffb3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Vec2D.cpp">
-      <Filter>Source Files\Utils</Filter>
+    <ClCompile Include="AARectangle.cpp">
+      <Filter>Source Files\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="Utils.cpp">
-      <Filter>Source Files\Utils</Filter>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcadeApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcadeScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>Source Files\Games\Breakout</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakOut.cpp">
+      <Filter>Source Files\Games\Breakout</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Source Files\Shapes</Filter>
     </ClCompile>
     <ClCompile Include="Color.cpp">
       <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Excluder.cpp">
+      <Filter>Source Files\Games\Breakout</Filter>
+    </ClCompile>
+    <ClCompile Include="FileCommandLoader.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GameController.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="InputController.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Line2D.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Paddle.cpp">
+      <Filter>Source Files\Games\Breakout</Filter>
     </ClCompile>
     <ClCompile Include="ScreenBuffer.cpp">
       <Filter>Source Files\Graphics</Filter>
@@ -66,35 +114,20 @@
     <ClCompile Include="Screen.cpp">
       <Filter>Source Files\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Line2D.cpp">
+    <ClCompile Include="Shape.cpp">
       <Filter>Source Files\Shapes</Filter>
     </ClCompile>
     <ClCompile Include="Triangle.cpp">
       <Filter>Source Files\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="Shape.cpp">
-      <Filter>Source Files\Shapes</Filter>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="ArcadeApp.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Vec2D.cpp">
+      <Filter>Source Files\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="AARectangle.cpp">
-      <Filter>Source Files\Shapes</Filter>
-    </ClCompile>
-    <ClCompile Include="Circle.cpp">
-      <Filter>Source Files\Shapes</Filter>
-    </ClCompile>
-    <ClCompile Include="App.cpp">
-      <Filter>Source Files\App</Filter>
-    </ClCompile>
-    <ClCompile Include="ArcadeScene.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="GameController.cpp">
-      <Filter>Source Files\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="InputController.cpp">
-      <Filter>Source Files\Input</Filter>
+    <ClCompile Include="LevelBoundary.cpp">
+      <Filter>Source Files\Games\Breakout</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +178,33 @@
     </ClInclude>
     <ClInclude Include="InputController.h">
       <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Games</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="FileCommandLoader.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakOut.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Excluder.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundaryEdge.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Paddle.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelBoundary.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
