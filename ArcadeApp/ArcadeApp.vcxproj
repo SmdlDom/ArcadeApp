@@ -196,6 +196,9 @@
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Vec2D.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\BreakoutLevels.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

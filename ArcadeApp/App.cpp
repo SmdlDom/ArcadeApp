@@ -36,6 +36,11 @@ Scene* App::TopScene() {
 	return _sceneStack.back().get();
 }
 
+const std::string& App::GetBasePath() {
+	static std::string basePath = SDL_GetBasePath();
+	return basePath;
+}
+
 bool App::Init(uint32_t width, uint32_t height, uint32_t mag) {
     mnoptrWindow = _screen.Init(width, height, mag);
 

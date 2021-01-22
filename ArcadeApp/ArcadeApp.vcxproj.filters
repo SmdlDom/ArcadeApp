@@ -219,4 +219,7 @@
       <Filter>Header Files\Games\BreakOut</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\BreakoutLevels.txt" />
+  </ItemGroup>
 </Project>

@@ -32,7 +32,7 @@ public:
 	inline const AARectangle GetBoundRect() const { return _bBox; }
 	inline void SetVelocity(const Vec2D& vel) { _velocity = vel; }
 	inline Vec2D GetVelocity() const { return _velocity; }
-	inline float GetRadius() const { return _bBox.GetWidth() / 2.0f; }
+	inline float GetRadius() const { return RADIUS; }
 	inline Vec2D GetPosition() const { return _bBox.GetCenterPoint(); }
 };
 

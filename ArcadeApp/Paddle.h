@@ -20,7 +20,7 @@ class Paddle : public Excluder {
 private:
 	uint32_t _direction; //direction we're moving
 	AARectangle _boundary; //boundary that the paddle is confined to
-	const float VELOCITY = 150.0f; //pixels/sec
+	const float VELOCITY = 200.0f; //pixels/sec
 	const float CORNER_BOUNCE_AMT = 0.2f;
 
 public:
