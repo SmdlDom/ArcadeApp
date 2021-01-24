@@ -135,6 +135,12 @@
     <ClCompile Include="BreakoutGameLevel.cpp">
       <Filter>Source Files\Games\Breakout</Filter>
     </ClCompile>
+    <ClCompile Include="BMPImage.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteSheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vec2D.h">
@@ -218,8 +224,24 @@
     <ClInclude Include="BreakoutGameLevel.h">
       <Filter>Header Files\Games\BreakOut</Filter>
     </ClInclude>
+    <ClInclude Include="BMPImage.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteSheet.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Assets\BreakoutLevels.txt" />
+    <Text Include="ArcadeFont.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="BreakoutLevels.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ArcadeFont.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

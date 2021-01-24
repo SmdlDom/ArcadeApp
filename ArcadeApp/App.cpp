@@ -47,12 +47,13 @@ bool App::Init(uint32_t width, uint32_t height, uint32_t mag) {
 	std::unique_ptr<ArcadeScene> arcadeScene = std::make_unique<ArcadeScene>();
 	PushScene(std::move(arcadeScene));
 
+	/*
 	{
 		std::unique_ptr<BreakOut> breakoutGame = std::make_unique<BreakOut>();
 		std::unique_ptr<GameScene> breakoutScene = std::make_unique<GameScene>(std::move(breakoutGame));
 		PushScene(std::move(breakoutScene));
 	}
-
+	*/
     return mnoptrWindow != nullptr;
 }
 

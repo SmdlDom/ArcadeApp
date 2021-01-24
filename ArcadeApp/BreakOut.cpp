@@ -37,7 +37,7 @@ Game
 */
 
 void BreakOut::ResetGame(size_t toLevel, int lives) {
-    _levels = BreakoutGameLevel::LoadLevelsFromFile(App::GetBasePath() + "Assets\\BreakoutLevels.txt");
+    _levels = BreakoutGameLevel::LoadLevelsFromFile(App::GetBasePath() + "Assets/BreakoutLevels.txt");
     _yCutoff = App::Singleton().Height() - 2 * Paddle::PADDLE_HEIGHT;
     _lives = lives;
     _currentLevel = toLevel;
