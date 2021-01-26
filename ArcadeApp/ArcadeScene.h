@@ -5,7 +5,7 @@
 
 #include <memory>
 #include "Scene.h"
-#include "SpriteSheet.h"
+
 
 enum eGame {
 	TETRIS = 0,
@@ -21,7 +21,7 @@ class ArcadeScene : public Scene {
 private:
 	std::unique_ptr<Scene> GetScene(eGame game);
 
-	SpriteSheet _tempSS;
+	
 public:
 	ArcadeScene();
 	virtual void Init() override;

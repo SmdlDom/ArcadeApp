@@ -9,6 +9,7 @@
 #include "Screen.h"
 #include "Scene.h"
 #include "InputController.h"
+#include "BitmapFont.h"
 
 struct SDL_Window;
 
@@ -19,6 +20,9 @@ private:
 
 	std::vector<std::unique_ptr<Scene>> _sceneStack;
 	InputController _inputController;
+
+	BitmapFont _font;
+
 public: 
 	static App& Singleton();
 	bool Init(uint32_t width, uint32_t height, uint32_t mag);
@@ -26,6 +30,7 @@ public:
 
 	inline uint32_t Width() const { return _screen.Width(); }
 	inline uint32_t Height() const { return _screen.Height(); }
+	inline const BitmapFont& GetFont() const { return _font; }
 
 	void PushScene(std::unique_ptr<Scene> scene);
 	void PopScene();

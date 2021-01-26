@@ -48,7 +48,7 @@ void BreakOut::ResetGame(size_t toLevel, int lives) {
     _levelBoundary = { levelBoundary };
     _paddle.Init(paddleRect, levelBoundary);
     _ball.MoveTo(Vec2D(App::Singleton().Width() / 2, App::Singleton().Height()*0.75));
-
+g
     SetToServeState();
 
 }

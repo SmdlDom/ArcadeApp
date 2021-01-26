@@ -16,6 +16,12 @@ bool IsLE(float x, float y) {
 	return x < y || IsEqual(x, y);
 }
 
+float Clamp(float val, float min, float max) {
+	if (val > max) return max;
+	if (val < min) return min;
+	return val;
+}
+
 float MillisecondsToSeconds(unsigned int milliseconds) {
 	return static_cast<float>(milliseconds) / 1000.0f;
 }

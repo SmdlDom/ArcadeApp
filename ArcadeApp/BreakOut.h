@@ -1,5 +1,7 @@
 #pragma once
 
+//TODO implement a scoring system 
+
 #ifndef GAMES_BREAKOUT_BREAKOUT_H_
 #define GAMES_BREAKOUT_BREAKOUT_H_
 

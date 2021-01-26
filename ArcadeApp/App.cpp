@@ -42,6 +42,12 @@ const std::string& App::GetBasePath() {
 }
 
 bool App::Init(uint32_t width, uint32_t height, uint32_t mag) {
+
+	if (!_font.Load("ArcadeFont")) {
+		std::cout << "Could not load arcade font!" << std::endl;
+		return false;
+	}
+
     mnoptrWindow = _screen.Init(width, height, mag);
 
 	std::unique_ptr<ArcadeScene> arcadeScene = std::make_unique<ArcadeScene>();
