@@ -153,6 +153,15 @@
     <ClCompile Include="ButtonOptionsScene.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationPlayer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedSprite.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vec2D.h">
@@ -254,6 +263,15 @@
     <ClInclude Include="ButtonOptionsScene.h">
       <Filter>Header Files\Scenes</Filter>
     </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationPlayer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedSprite.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ArcadeFont.txt">
@@ -262,9 +280,18 @@
     <Text Include="BreakoutLevels.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="PacmanSprites.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Pacman_animations.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <Image Include="ArcadeFont.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PacmanSprites.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

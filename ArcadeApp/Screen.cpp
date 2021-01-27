@@ -86,8 +86,6 @@ void Screen::FillPoly(const std::vector<Vec2D>& points, FillPolyFunc func) {
 						nodeXVec[k + 1] = right;
 					}
 
-					//Line2D line = {Vec2D(nodeXVec[k], pixelY), Vec2D(nodeXVec[k+1], pixelY)};
-					//Draw(line, color);
 					for (int pixelX = nodeXVec[k]; pixelX < nodeXVec[k + 1]; ++pixelX) {
 						Draw(pixelX, pixelY, func(pixelX, pixelY));
 					}

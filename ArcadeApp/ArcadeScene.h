@@ -5,6 +5,7 @@
 
 #include <memory>
 #include "ButtonOptionsScene.h"
+#include "AnimatedSprite.h"
 
 enum eGame {
 	TETRIS = 0,
@@ -20,6 +21,9 @@ class ArcadeScene : public ButtonOptionsScene {
 private:
 	std::unique_ptr<Scene> GetScene(eGame game);
 
+	//temp
+	AnimatedSprite _sprite;
+	SpriteSheet _spriteSheet;
 	
 public:
 	ArcadeScene();
