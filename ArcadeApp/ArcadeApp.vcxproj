@@ -152,6 +152,8 @@
     <ClCompile Include="BMPImage.cpp" />
     <ClCompile Include="BreakOut.cpp" />
     <ClCompile Include="BreakoutGameLevel.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ButtonOptionsScene.cpp" />
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Excluder.cpp" />
@@ -161,6 +163,7 @@
     <ClCompile Include="InputController.cpp" />
     <ClCompile Include="LevelBoundary.cpp" />
     <ClCompile Include="Line2D.cpp" />
+    <ClCompile Include="NotImplementedScene.cpp" />
     <ClCompile Include="Paddle.cpp" />
     <ClCompile Include="Screen.cpp" />
     <ClCompile Include="ScreenBuffer.cpp" />
@@ -180,6 +183,8 @@
     <ClInclude Include="BoundaryEdge.h" />
     <ClInclude Include="BreakOut.h" />
     <ClInclude Include="BreakoutGameLevel.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="ButtonOptionsScene.h" />
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Excluder.h" />
@@ -192,6 +197,7 @@
     <ClInclude Include="InputController.h" />
     <ClInclude Include="LevelBoundary.h" />
     <ClInclude Include="Line2D.h" />
+    <ClInclude Include="NotImplementedScene.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Screen.h" />

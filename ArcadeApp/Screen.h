@@ -55,8 +55,8 @@ class Screen {
 public:
 	Screen();
 	~Screen();
-
-	SDL_Window* Init(uint32_t w, uint32_t h, uint32_t mag, bool fast = true);
+	//TODO figure out why enabling fast does not swap the buffer properly
+	SDL_Window* Init(uint32_t w, uint32_t h, uint32_t mag, bool fast = false);
 	void SwapScreens();
 
 	inline void SetClearColor(const Color& clearColor) { _clearColor = clearColor; }

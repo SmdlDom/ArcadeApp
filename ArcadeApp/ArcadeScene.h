@@ -4,8 +4,7 @@
 #define SCENES_ARCADESCENE_H_
 
 #include <memory>
-#include "Scene.h"
-
+#include "ButtonOptionsScene.h"
 
 enum eGame {
 	TETRIS = 0,
@@ -17,7 +16,7 @@ enum eGame {
 
 class Screen;
 
-class ArcadeScene : public Scene {
+class ArcadeScene : public ButtonOptionsScene {
 private:
 	std::unique_ptr<Scene> GetScene(eGame game);
 

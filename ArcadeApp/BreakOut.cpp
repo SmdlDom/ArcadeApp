@@ -48,7 +48,7 @@ void BreakOut::ResetGame(size_t toLevel, int lives) {
     _levelBoundary = { levelBoundary };
     _paddle.Init(paddleRect, levelBoundary);
     _ball.MoveTo(Vec2D(App::Singleton().Width() / 2, App::Singleton().Height()*0.75));
-g
+
     SetToServeState();
 
 }
@@ -109,7 +109,15 @@ void BreakOut::Init(GameController& controller) {
     };
     controller.AddInputActionForKey(rightKeyAction);
 
+    ButtonAction backAction;
+    backAction.key = GameController::CancelKey();
+    backAction.action = [this](uint32_t dt, InputState state) {
+        if (_gameState == IN_SERVE || _gameState == IN_GAME_OVER) {
+            if (GameController::IsPressed(state)) App::Singleton().PopScene();
+        }
+    };
 
+    controller.AddInputActionForKey(backAction);
 }
 
 void BreakOut::Update(uint32_t dt) {
